@@ -1,9 +1,11 @@
 body {
   margin: 0;
+  background-color: black;
 }
 
 .container{
   display: flex;
+  margin-left: 288px;
 }
 
 .logo {
@@ -13,6 +15,7 @@ body {
   background: black;
   opacity: 0.6;
   font-weight: bold;
+  height: 128px;
 }
 
 .logo-container {
@@ -25,7 +28,7 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 432px;
+  gap: 648px;
 }
 
 .logo-container img {
@@ -42,4 +45,62 @@ body {
 
 .footer a {
   color: white
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  background-color: whitesmoke;
+}
+
+.form {
+  display: flex;
+  gap: 32px;
+  flex-grow: 1;
+  font-size: 15px;
+}
+
+.form input {
+  width: 256px;
+  height: 24px;
+  border-radius: 5px;
+  border-color: lightgray;
+}
+
+.form-info {
+  margin-top: 128px;
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 32px;
+  padding-right: 128px;
+}
+.form-submit {
+  flex-grow: 1;
+  font-size: 20px;
+  padding-left: 32px;
+
+}
+
+.form-submit button {
+  width: 256px;
+  height: 48px;
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  margin: 24px 0;
+}
+
+.form-submit a {
+  text-decoration: none;
+  color: green;
+}
+
+.form-card {
+  background-color: white;
+  padding: 32px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
