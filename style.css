@@ -1,54 +1,45 @@
-/* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-/* 2. Remove default margin */
-*:not(dialog) {
+body {
   margin: 0;
 }
 
-/* 3. Enable keyword animations */
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    interpolate-size: allow-keywords;
-  }
+.container{
+  display: flex;
 }
 
-body {
-  /* 4. Add accessible line-height */
-  line-height: 1.5;
-  /* 5. Improve text rendering */
-  -webkit-font-smoothing: antialiased;
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  opacity: 0.6;
+  font-weight: bold;
 }
 
-/* 6. Improve media defaults */
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
+.logo-container {
+  background-image: url("background-image.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 30%;
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 432px;
 }
 
-/* 7. Inherit fonts for form controls */
-input, button, textarea, select {
-  font: inherit;
+.logo-container img {
+  width: 80px;
 }
 
-/* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
+.header {
+  margin-top: 154px;
 }
 
-/* 9. Improve line wrapping */
-p {
-  text-wrap: pretty;
-}
-h1, h2, h3, h4, h5, h6 {
-  text-wrap: balance;
+.footer {
+  font-size: 16px;
 }
 
-/*
-  10. Create a root stacking context
-*/
-#root, #__next {
-  isolation: isolate;
+.footer a {
+  color: white
 }
